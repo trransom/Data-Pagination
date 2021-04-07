@@ -31,8 +31,6 @@ function showPage(list, page) {
    }
 }
 
-
-
 /**
 * This function creates and insert/append the elements needed for the pagination buttons
 * @param   {Array} list      List of student objects
@@ -59,6 +57,9 @@ function addPagination(list) {
          showPage(list, activePage);
       }
    });
+
+   
+
 }
 
 
