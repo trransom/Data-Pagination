@@ -48,18 +48,15 @@ function addPagination(list) {
    }
 
    // add event listener for button clicks
-   ul.firstChild.className = 'active';
+   ul.firstChild.firstChild.className = "active";
    ul.addEventListener('click', (e) => {
       if (e.target.type === 'button') {
-         ul.children.item(activePage - 1).className = '';
+         ul.children.item(activePage - 1).firstChild.className = '';
          activePage = parseInt(e.target.innerHTML);
-         ul.children.item(activePage - 1).className = 'active';
+         ul.children.item(activePage - 1).firstChild.className = "active";
          showPage(list, activePage);
       }
    });
-
-   
-
 }
 
 
